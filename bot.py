@@ -24,7 +24,6 @@ STEPS = {
 }
 
 async def start(update: Update, context: CallbackContext):
-    # Создаем клавиатуру с кнопками
     keyboard = [["Концерт 🎤", "Постановка 🎭"], ["Конференция 🎙️"]]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
     await update.message.reply_text(
